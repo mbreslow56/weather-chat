@@ -1,9 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="node_modules/handlebars/dist/handlebars.min.js"></script>
 	<title>Weather Chat</title>
 </head>
 <body>
-	<h1>Shalom World!</h1>
+	<div class="row">
+	  <div class="col-md-10 col-md-offset-1">
+	    <div class="page-header">
+	      <h1>Weather Chat</h1>
+	    </div>
+	  </div>
+	</div>
+	<div class="row">
+	  <form class="col-md-8 col-md-offset-1">
+	    <div class="form-group">
+	      <input type="text" id="enter-city" class="form-control" placeholder="Enter City"></input>
+	      <button type="button" class="btn btn-primary search-city">Search</button>
+	    </div>
+	  </form>
+	  <div class="results">
+	   <!-- This is where the results will populate -->
+	  </div>
+	</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
